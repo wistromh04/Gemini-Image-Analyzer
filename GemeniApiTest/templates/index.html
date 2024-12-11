@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemeni Image Analyzer</title>
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <div id="headingDiv">
+        <h1>Gemini Image Analyzer</h1>
+        <h3>By Wistrom Herfordt</h3>
+    </div>
+    <form id="upload-form" enctype="multipart/form-data">
+        <label for="file">Select your image:</label>
+        <input type="file" name="file" id="file" accept="image/*" required>
+        
+        <button id="uploadB" type="submit">Analyze Image</button>
+    </form>
+    <div id="AIDIV">
+        <h2>AI Response:</h2>
+        <div id="response"></div>
+    </div>
+</body>
+</html>
